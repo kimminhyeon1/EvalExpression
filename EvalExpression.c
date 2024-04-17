@@ -29,7 +29,7 @@ void push(StackType* sptr, element item) {
 element pop(StackType* sptr) {
 	if (is_empty(sptr)) {
 		fprintf(stderr, "스택 공백 에러\n");
-		return -1;
+		exit(1);
 	}
 	else return sptr->data[(sptr->top)--];
 }
